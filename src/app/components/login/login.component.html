@@ -1,0 +1,63 @@
+<section class="vh-75 py-5">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-8 col-xl-7">
+        <div class="card text-black" style="border-radius: 25px">
+          <div class="card-body p-md-4">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-8 col-xl-6 order-2 order-lg-1">
+
+                <p class="text-center h1 fw-bold mb-4 mt-4">Bienvenido</p>
+                <form (ngSubmit)="logIn( form )" #form="ngForm">
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input
+                      type="email"
+                      id="form2Example1"
+                      name="email"
+                      class="form-control" ngModel
+                      placeholder="name@example.com"
+                    />
+                    <label class="form-label" for="form2Example1"
+                      >Email</label
+                    >
+                  </div>
+
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="form2Example2"
+                      name="password"
+                      class="form-control" ngModel
+                      placeholder="*****"
+                    />
+                    <label class="form-label" for="form2Example2"
+                      >Contraseña</label
+                    >
+                  </div>
+
+                  <!-- Submit button -->
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block mx-auto mb-4 center-button"
+                    
+                  >
+                    Sign In
+                  </button>
+                </form>
+                                  <!-- Register buttons -->
+                                  <div class="text-center">
+                                    <p>
+                                      Not a member?
+                                      <a [routerLink]="['/register']">Register</a>
+                                    </p>
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
